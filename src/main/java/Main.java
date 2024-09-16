@@ -1,12 +1,13 @@
+import java.util.*;
 
 public class Main {
 	
-	public  void transfering(int Transferamount ,BankAccount transfer_account, BankAccount receives_account ) {
-
-		
-	 }
+	public static Scanner input = new Scanner(System.in);
     public static void main(String[] args) {
     	
+    	//BANK 
+    	
+    	/*
         BankAccount bob_acct = new BankAccount(1000, -1000);
         BankAccount lisa_acct = new BankAccount(1000, -1000);
 
@@ -42,6 +43,38 @@ public class Main {
         }else {
         	System.out.println("ERROR: TRANSFER IS NOT POSSIBLE : overdraft ");
         }
+        
+        
+        */
+    	//-----------------------------------------------------------
+    	//Rectangle 
+    	
+    	System.out.println("num 1 | Please enter the length, width  of the rectangle : ");
+    	Rectangle r1 = new Rectangle(input.nextInt(), input.nextInt());
+    	System.out.println("");
+    	System.out.println("num 2 | Please enter the length, width of the rectangle : ");
+    	Rectangle r2 = new Rectangle(input.nextInt(), input.nextInt());
+    	System.out.println("----------------");
+    	System.out.println("");
+
+    	System.out.println("num 1 ");
+    	r1.draw();
+    	System.out.println("");
+    	System.out.println("num 2 ");
+    	r2.draw();
+    	System.out.println("----------------");
+
+    	System.out.println("After changing the scale");
+    	r1.scale(2);
+    	r1.draw();
+    	System.out.println("");
+    	System.out.println("----------------");
+    	System.out.println("num1");
+    	System.out.println(r1.toString());
+    	System.out.println("");
+    	System.out.println("num2");
+    	System.out.println(r2.toString());
+
       }
 
     }
