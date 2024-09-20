@@ -49,6 +49,7 @@ public class Main {
     	//-----------------------------------------------------------
     	//Rectangle 
     	
+    	/*
     	System.out.println("num 1 | Please enter the length, width  of the rectangle : ");
     	Rectangle r1 = new Rectangle(input.nextInt(), input.nextInt());
     	System.out.println("");
@@ -74,6 +75,15 @@ public class Main {
     	System.out.println("");
     	System.out.println("num2");
     	System.out.println(r2.toString());
+    	 */
+
+       	//-----------------------------------------------------------
+    	//Circle 
+    	
+    	Circle c1 = new Circle(2);
+    	Circle c2 = new Circle(10);
+    	System.out.println("The area of ​​the first circle is "+c1.circleArea());
+    	System.out.println("The area of ​​the second circle is "+c2.circleArea());
 
       }
 
